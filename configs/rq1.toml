@@ -1,0 +1,128 @@
+# RQ 1
+args = [
+    "main.py",
+
+    "-specific_seeds", "[0]", # for missing seeds
+#    "-specific_seeds", "None", # regular 5 random seeds (0-4)
+#
+    "-rq", "rq1-priorization",  # actually applicable for all experiments
+#    "-rq", "rq2-retrain",
+
+    "-budget_list", "[0.01, 0.03, 0.05, 0.10, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90]",
+
+    "-data_dir", "../data",
+
+    "-save_result", "True",
+#    "-save_result", "False",
+
+    "-load_prediction", "True",
+#    "-load_prediction", "False",
+
+    "-load_feature", "True",
+#    "-load_feature", "False",
+
+    "-n_workers", "1",  # for normal dataset
+#    "-n_workers", "4",
+
+#    "-device", "cpu",
+    "-device", "cuda",
+#    "-device", "mps",
+
+    "-cand_size", "all",  # all candidate set
+
+#    "-create_imbalanced", "True",
+    "-create_imbalanced", "False",
+
+#    "-debug_mode", "True",
+    "-debug_mode", "False",
+]
+
+cand_types = [
+    "nominal",
+    "corrupted",
+    "adversarial",
+]
+
+methods = [
+#   (0) Specifial Methods
+#    "random",
+#    "best",
+
+#   (1) Coverage-Based
+#    "nac-ctm",
+#    "nac-cam",
+#    "kmnc-ctm",
+#    "kmnc-cam",  # time-consuming
+
+#    (2) Surprise-Based
+#    "lsa",
+#    "pc-lsa",
+#    "pc-mlsa",
+#    "pc-dsa",  # time-consuming
+#    "pc-mdsa",
+#    "pc-mmdsa",
+
+#    (3) Uncertainty-Based
+#    "deepgini",
+#    "maxp",
+#    "margin",
+#    "entropy",
+
+#    (4) sota baselines
+#    "mcp_official",  # selection method
+#    "datis",  # selection method
+#    "datis_no_selection",
+#    "nns",
+#    "fast",
+#    "nss",  # not available for text dataset
+#    "ats",  # not available for binary classification task
+#    "rts",  # not available for text dataset
+#    "certpri",  # not available for text tasks (embedding layer)
+#    "prima",
+
+#    (5) Our methods
+    "dufp",
+
+#    ----Ablation(1): Lambda Values----
+#    "dufp_lam(0.0)",  # w/o density ()
+#    "dufp_lam(0.001)",
+#    "dufp_lam(0.01)",
+#    "dufp_lam(0.02)",
+#    "dufp_lam(0.05)",
+#    "dufp_lam(0.1)",
+#    "dufp_lam(0.2)",
+#    "dufp_lam(0.3)",
+#    "dufp_lam(0.4)",
+#    "dufp_lam(0.5)",
+#    "dufp_lam(0.6)",
+#    "dufp_lam(0.7)",
+#    "dufp_lam(0.8)",
+#    "dufp_lam(0.9)",
+#    "dufp_lam(1.0)",
+
+#    ----Ablation(2): Alpha Values----
+#    "dufp_alpha(0.1)",
+#    "dufp_alpha(0.2)",
+#    "dufp_alpha(0.3)",
+#    "dufp_alpha(0.5)",
+#    "dufp_alpha(1.0)",
+#    "dufp_alpha(1.5)",
+#    "dufp_alpha(2.0)",
+#    "dufp_alpha(3.0)",
+
+#    ----Ablation(3): Density Estimation----
+#    "dufp_dens(kde)",
+#    "dufp_dens(gaussian_single)",
+#    "dufp_dens(gmm)",
+#    "dufp_dens(vmf)",
+]
+
+models = [
+    "FM-ResNet20",
+    "C10-ResNet20",
+    "SVHN-VGG16",
+    "IM100Test-deit_base_patch16_224",
+    "AGNews-Bert",
+    "DBPedia-Bert_base_uncased",
+]
+

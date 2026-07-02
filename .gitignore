@@ -1,0 +1,24 @@
+# Ignore data files
+*.pkl
+*.h5
+*.pth
+*.pt
+*.zip
+*.npy
+*.xlsx
+*.
+
+# Ignore data directory
+data/
+results/
+
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore other unnecessary files
+.DS_Store
+*.log
+.idea/
