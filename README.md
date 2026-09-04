@@ -1,5 +1,7 @@
 # DuFP - Official Implementation
 
+[![Paper](https://img.shields.io/badge/Paper-ASE%202026-00629B?style=flat)](https://conf.researchr.org/track/ase-2026/ase-2026-research-track) [![DOI](https://img.shields.io/badge/DOI-10.1145%2F3832783.3834351-00629B?style=flat)](https://doi.org/10.1145/3832783.3834351) [![GitHub](https://img.shields.io/badge/GitHub-DuFP-B45309?logo=github&logoColor=white&style=flat)](https://github.com/Ryan-LHR/DuFP) [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.19184935-21A1EC?logo=zenodo&logoColor=white&style=flat)](https://doi.org/10.5281/zenodo.19184935)
+
 This repository contains the implementation of DuFP, a test input prioritization method for DNNs proposed in our paper: 
 **When Ambiguity Meets Atypicality:  Dual-Perspective Test Input Prioritization for DNNs. [ASE 2026]**
 
