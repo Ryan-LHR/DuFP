@@ -1,11 +1,11 @@
 # DuFP - Official Implementation
 
-[![Paper](https://img.shields.io/badge/Paper-ASE%202026-00629B?style=flat)](https://conf.researchr.org/track/ase-2026/ase-2026-research-track) [![DOI](https://img.shields.io/badge/DOI-10.1145%2F3832783.3834351-00629B?style=flat)](https://doi.org/10.1145/3832783.3834351) [![GitHub](https://img.shields.io/badge/GitHub-DuFP-B45309?logo=github&logoColor=white&style=flat)](https://github.com/Ryan-LHR/DuFP) [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.19184935-21A1EC?logo=zenodo&logoColor=white&style=flat)](https://doi.org/10.5281/zenodo.19184935)
+[![ASE 2026](https://img.shields.io/badge/Paper-ASE%202026-00629B?style=flat)](https://conf.researchr.org/details/ase-2026/ase-2026-research-track/21/When-Ambiguity-Meets-Atypicality-Dual-Perspective-Test-Input-Prioritization-for-DNNs) [![arXiv 2609.34703](https://img.shields.io/badge/arXiv-2609.34703-B31B1B?style=flat&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.34703) [![GitHub](https://img.shields.io/badge/GitHub-DuFP-B45309?logo=github&logoColor=white&style=flat)](https://github.com/Ryan-LHR/DuFP) [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.19184935-21A1EC?logo=zenodo&logoColor=white&style=flat)](https://doi.org/10.5281/zenodo.19184935)
 
 This repository contains the implementation of DuFP, a test input prioritization method for DNNs proposed in our paper: 
-**When Ambiguity Meets Atypicality:  Dual-Perspective Test Input Prioritization for DNNs. [ASE 2026]**
+**When Ambiguity Meets Atypicality: Dual-Perspective Test Input Prioritization for DNNs.**
 
-[Paper: to be released after the review process.](not published now)
+The paper has been accepted for publication at ASE 2026. The preprint is now available on [arXiv](https://arxiv.org/abs/2609.34703). The ASE conference version will be linked here once released.
 
 <p align="center">
   <img src="figures/assets/workflow.jpg" width="80%">
@@ -161,12 +161,16 @@ The APFD performance of DuFP with different $\alpha$ values under the corrupted 
 
 ## Citation
 
+For now, please cite the arXiv preprint. The ASE proceedings citation will be added when available.
+
 ```bibtex
-@article{dufp,
-  title        = {To be updated},
-  author       = {To be updated},
-  journal      = {To be updated},
-  year         = {2026},
-  note         = {Paper information will be added after publication}
+@misc{dufp,
+  title         = {When Ambiguity Meets Atypicality: Dual-Perspective Test Input Prioritization for DNNs},
+  author        = {Haoran Li and Shihai Wang and Bin Liu and Jialuo Chen and Wenjing Zhu and Yu Liu and Tengfei Shi and Shudi Guo},
+  year          = {2026},
+  eprint        = {2609.34703},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  url           = {https://arxiv.org/abs/2609.34703}
 }
 ```
